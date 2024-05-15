@@ -1,0 +1,54 @@
+<html>  
+<head>
+	<title>Profil Kabupaten Banyuwangi</title>
+	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01198f406a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="banner">
+        
+        <div class="form-box">
+    <h1 id="Title">Sign up</h1>
+    <form onsubmit="result-false" method="post">
+              <div class="input-group">
+                  <div class="input-field">
+                <div class="input-field" id="nameField">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="username" placeholder="Nama user">
+                      </div>
+                  </div>
+                </div>
+                       
+
+            <div class="input-group">
+            <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="Password">
+                
+    </div>
+        </div>`
+                <div class="btn-field">
+                <button onclick="login()">Login</button>
+                </div>
+        </form>
+<script type="text/javascript">
+    function login() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+    
+    
+    if (user =="tiadira" && pass=="banyuwangi"){
+        alert("Login sukses!");
+        window.open("home.html")
+        window.close()
+    }else{
+        alert("Login gagal!");
+    }
+    }
+</script>
+            </div>
+        </div>
+    </body>
+</html>
